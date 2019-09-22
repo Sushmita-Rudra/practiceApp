@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>Restaurant Bill</title>
+       
+    </head>
+    <body>
+        <script src="main.js">
+
+
+        </script>  
+        <main>
+        <center>
+        <h1><b>Maitre D</b></h1>
+       
+            <table >
+                <tr>
+                    <td>
+                    <label id="total_val">Total: </label>
+                    <input type= "number" id= "number1" placeholder = "0.00" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id= "tip-val">Tip: $ <span id = "tipvalue">0.00</span> </label>
+                    </td>
+                    <td>        
+                        <label id = "tiprate-percentage" >Rate: </label>
+                        <input type= "number" id="number2" value= "" placeholder= "0.00">
+                    </td>
+                </tr>
+           
+                <tr>
+                    <td>
+                        <label id = "tax-value">Tax: $ <span id= "taxvalue">0.00</span></label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label id= "grand-total">Grand Total: $ <span id= "grandvalue">0.00</span></label>
+                    </td>
+                </tr>
+       
+            </table>
+            <br>
+            <button id= "calculator" onclick= "billCalculator()" ><b>Calculate</b></button>
+           
+       
+    </center>
+   
+    </main>
+    </body>
+</html>
